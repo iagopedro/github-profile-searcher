@@ -19,6 +19,8 @@ export default function ProfileSearch({ history }) {
       })
       .catch((error) => {
         console.error(error);
+        alert(`This username doesn't exist on Github. Try again.`)
+        setUsername('');
       })
   }
 
